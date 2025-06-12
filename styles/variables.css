@@ -3,11 +3,11 @@
   и их переопределение под различные устройства
 */
 :root {
-    --background-image: url(../images/cover-image.png);
+    --bg-image: url(../images/cover-image.png);
     --font-family: 'IBM Plex mono';
     --color-black: #000028;
     --accent-color: #FF0070;
-    --paragraph-color: #F1B2CE;
+    --paragraph-text-color: #F1B2CE;
     --accent-color-hover: rgba(255,0,112, 0.4);
     --page-padding: 10px;
     --main-font-size: 1.125rem;
@@ -15,9 +15,13 @@
     --header-font-weight: bold;
     --letter-spacing: 0;
     --header-title-color: #DB00FF;
+    --title-accent-color: var(--accent-color);
+    --header-title-paragraph-bg-color: var(--accent-color);
     --header-row-gap: 10px;
-    --header-title-paragraph-color: var(--color-black);
-    --header-title-paragraph-background-color: var(--accent-color);
+    --title-bg-color: var(--title-accent-color);
+    --subtitle-color: var(--color-black);
+    --subltitle-bg-color: var(--title-accent-color);
+    --paragraph-text-link-color: var(--accent-color);
     --main-section-title-color: var(--accent-color);
     --button-color: var(--accent-color);
 }
