@@ -65,8 +65,10 @@
 }
 
 .header__theme-menu-list {
-    display: grid;
-    grid-template-rows: repeat(3, max-content);
+    display: flex;
+    flex-direction: column;
+    /*display: grid;*/
+    /*grid-template-rows: repeat(3, max-content);*/
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -331,5 +333,22 @@
         padding-top: 165px;
         padding-bottom: 170px;
     }
+}
 
+@media (width >= 1024px) {
+    :root {
+
+    }
+
+    .header > :nth-child(2) {
+        margin-top: 0px;
+        justify-self: center;
+    }
+
+    .header__theme-menu-list {
+        display: flex;
+        flex-direction: row;
+        /*display: grid;*/
+        /*grid-template-columns: repeat(3, max-content);*/
+    }
 }
