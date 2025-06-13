@@ -99,15 +99,18 @@
     border-bottom:  1px solid var(--accent-color);
 }
 
-.header__title {
-    display: flex;
-    justify-content: space-between;
+.title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     font-weight: var(--header-font-weight);
     color: var(--header-title-color);
     text-shadow: 4px 4px 0 var(--title-accent-color);
     line-height: 82.5%;
     text-transform: lowercase;
+}
+
+.header__title {
+    display: flex;
+    justify-content: space-between;
 }
 
 .header__title-paragraph {
@@ -194,27 +197,25 @@
 }
 
 .gallery__img {
-    display: block;
     width: 100%;
     height: auto;
+    display: block;
+    object-fit: cover;
 }
 
 .footer {
     position: relative;
     margin-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(1, max-content);
+    display: flex;
+    padding-top: 275px;
+    padding-bottom: 275px;
     justify-content: center;
     align-items: center;
 }
 
-.footer > :first-child {
-    margin-top: 275px;
-}
-
-.footer > :last-child {
-    margin-bottom: 275px;
+.footer__title {
+    display: flex;
+    justify-content: center;
 }
 
 .paragraph__text-link {
@@ -285,22 +286,50 @@
         grid-column: 1 / auto;
     }
 
+    .gallery {
+        gap: 20px;
+    }
+
     .gallery__container {
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        grid-template-rows: repeat(3, 1fr) max-content;
+        max-height: 780px;
+        justify-content: stretch;
+        align-items: stretch;
     }
 
-    .
-
-    .gallery .gallery__sunset {
-        grid-column: 1/2;
-        grid-row: 1;
+    .gallery__img-sunset {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
     }
 
     .gallery .gallery__img-ice {
         grid-column: 3 ;
-        grid-row: 1 / 2;
+        grid-row: 1 / span 2;
+    }
+
+    .gallery__img-tape {
+        grid-column: 1 ;
+        grid-row: 2 / span 2;
+    }
+
+    .gallery__img-books {
+        grid-column: 2 ;
+        grid-row: 2 ;
+    }
+
+    .gallery__img_street {
+        grid-column: 2 / span 2;
+        grid-row: 3 / 3;
+    }
+
+    .footer {
+        margin-top: 80px;
+    }
+
+    .footer__title {
+        padding-top: 165px;
+        padding-bottom: 170px;
     }
 
 }
