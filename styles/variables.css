@@ -24,4 +24,10 @@
     --paragraph-text-link-color: var(--accent-color);
     --main-section-title-color: var(--accent-color);
     --button-color: var(--accent-color);
+    --header-gap: 65px;
+    --header-title-paragraph-width: 355px;
+    --header-title-paragraph-height: 117px;
+    --header-last-child-margin: 55px;
+    --main-padding-top: 50px;
+    --main-gap: 50px;
 }
