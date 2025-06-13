@@ -88,6 +88,7 @@
 }
 
 .header__theme-menu-button_active {
+    pointer-events: none;
     border:  1px solid var(--accent-color);
 }
 
@@ -95,7 +96,7 @@
     border:  1px solid var(--accent-color-hover);
 }
 
-.header__theme-menu-item:focus {
+.header__theme-menu-item:focus-visible {
     border-bottom:  1px solid var(--accent-color);
 }
 
@@ -228,7 +229,7 @@
     text-underline-offset: 4px;
 }
 
-.paragraph__text-link:focus {
+.paragraph__text-link:focus-visible {
     border: 1px solid var(--paragraph-text-color);
 }
 
