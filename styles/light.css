@@ -19,6 +19,10 @@
         --accent-color-hover: rgba(50, 49, 45, 0.4);
     }
 
+    .page {
+        background-color: #FFF1F7;
+    }
+
     :root:not(.theme-dark) .header__rec {
         display: none;
     }
@@ -38,6 +42,10 @@
     --paragraph-text-color: #353430 !important;
     --paragraph-text-link-color: #FF8DCB !important;
     --accent-color-hover: rgba(50, 49, 45, 0.4) !important;
+}
+
+.theme-light .page {
+    background-color: #FFF1F7;
 }
 
 .theme-light .header__rec {
