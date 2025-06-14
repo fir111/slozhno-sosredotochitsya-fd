@@ -102,7 +102,7 @@
 
 .header__theme-menu-button_active {
     pointer-events: none;
-    border:  1px solid var(--accent-color);
+    border:  1px solid currentColor;
 }
 
 .header__theme-menu-item:hover {
