@@ -48,10 +48,6 @@
     margin: var(--general-margin) var(--general-margin) 0 var(--general-margin);
 }
 
-.header > :last-child {
-    /*margin-bottom: 50px;*/
-}
-
 .decorated-zone::before {
     content: '';
     position: absolute;
@@ -231,6 +227,7 @@
 .footer__title {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .paragraph__text-link {
@@ -251,7 +248,6 @@
     :root {
         --page-height: 1024px;
         --general-margin: 20px;
-        --header-margin-top: 10px;
         --header-gap: 170px;
         --header-title-paragraph-width: 364px;
         --header-title-paragraph-margin: 80px;
@@ -262,8 +258,8 @@
     }
 
     .header {
-        /* TODO: remove*/
-        height: calc(var(--page-height) - 2*var(--general-margin)); /* TODO: remove*/
+        /*!* TODO: remove*!*/
+        /*height: calc(var(--page-height) - 2*var(--general-margin)); !* TODO: remove*!*/
         margin: var(--general-margin) var(--general-margin) 0 var(--general-margin);
         gap: 0px;
     }
@@ -276,7 +272,6 @@
         justify-self: self-start;
         margin-left: calc(-1 * var(--general-margin));
     }
-
 
     .main {
         display: grid;
@@ -350,28 +345,22 @@
     }
 
     .footer {
-        height: calc(var(--page-height) - 2*var(--general-margin)); /* TODO: remove */
+        /*height: calc(var(--page-height) - 2*var(--general-margin)); !* TODO: remove *!*/
         margin: var(--margin-top) var(--general-margin) var(--general-margin) var(--general-margin);
-    }
-
-    .footer__title {
-        padding-top: 165px;
-        padding-bottom: 170px;
     }
 }
 
 @media (width >= 1024px) {
     :root {
         --main-gap: 60px;
+        --page-height: 768px;
+        --general-margin: 20px;
     }
 
-    .header {
-        gap: 200px;
-    }
-
-    .header > :nth-child(2) {
+    .header__theme-menu {
         margin-top: 0;
         justify-self: center;
+        align-self: flex-start;
     }
 
     .header__theme-menu-list {
@@ -384,17 +373,14 @@
     }
 
     .header__title {
-        margin-top: 70px;
+        align-self: flex-end;
     }
 
     .header__title-paragraph {
         max-width: 491px;
         max-height: 71px;
-    }
-
-    .header > :last-child {
-        margin-top: -85px;
-        margin-bottom: 115px;
+        margin-bottom: 50px;
+        margin-top: 55px;
     }
 
     .main__section {
@@ -402,18 +388,9 @@
         row-gap: 20px;
     }
 
-    .main__section:nth-child(2) .main__article {
+    .modified__section .main__article {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         align-items: start;
-    }
-
-    .footer {
-        margin-top: 80px;
-        padding-top: 135px;
-    }
-
-    .footer__title {
-        padding-bottom: 25px;
     }
 }
