@@ -180,7 +180,7 @@
     text-align: start;
 }
 
-.main__section-h4 {
+.main__section__paragraph-subtitle {
     margin-top: 10px;
     background-color: var(--subltitle-bg-color);
     color: var(--subtitle-color);
