@@ -19,6 +19,7 @@
     --header-title-paragraph-bg-color: var(--accent-color);
     --header-row-gap: 10px;
     --title-bg-color: var(--title-accent-color);
+    --bg-color: var(--color-black);
     --subtitle-color: var(--color-black);
     --subltitle-bg-color: var(--title-accent-color);
     --paragraph-text-link-color: var(--accent-color);

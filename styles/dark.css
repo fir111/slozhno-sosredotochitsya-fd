@@ -1,15 +1,6 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
 
 @media (prefers-color-scheme: dark) {
     :root {
-        /* сохраните этот селектор в приведённом виде.
-          Так стили написанные ниже будут иметь больший вес,
-          чем стили в медиазапросе предпочтений пользователя
-        */
         --bg-image: url(../images/cover-image-dark.png);
         --accent-color: #FF0070;
         --color-black: #000028;
@@ -19,30 +10,9 @@
         --paragraph-text-link-color: var(--accent-color);
         --accent-color-hover: rgba(255,0,112, 0.4);
     }
-
-    .page {
-        background-color: var(--color-black);
-    }
-
-    .header__rec::after {
-        position: absolute;
-        top: 10px;
-        right: -19px ;
-        content: '';
-        color: var(--accent-color);
-        width: 9px;
-        height: 9px;
-        border-radius: 50%;
-        background: var(--accent-color);
-        box-shadow: 0 0 3px 2px var(--accent-color);
-    }
 }
 
 :root.theme-dark {
-    /* сохраните этот селектор в приведённом виде.
-      Так стили написанные ниже будут иметь больший вес,
-      чем стили в медиазапросе предпочтений пользователя
-    */
     --bg-image: url(../images/cover-image-dark.png) !important;
     --accent-color: #FF0070 !important;
     --color-black: #000028 !important;
@@ -55,18 +25,4 @@
 
 .theme-dark .page {
     background: var(--color-black);
-}
-
-.theme-dark .header__rec::after {
-    display: block !important;
-    position: absolute;
-    top: 10px ;
-    right: -19px;
-    content: '';
-    color: var(--accent-color);
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background: var(--accent-color);
-    box-shadow: 0 0 3px 2px var(--accent-color);
 }

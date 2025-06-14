@@ -24,6 +24,19 @@
     line-height: 1.5625rem;
 }
 
+.header__rec::after {
+    position: absolute;
+    top: 10px;
+    right: -19px ;
+    content: '';
+    color: var(--accent-color);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    box-shadow: 0 0 3px 2px var(--accent-color);
+}
+
 .header {
     position: relative;
     display: grid;
