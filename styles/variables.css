@@ -3,6 +3,7 @@
   и их переопределение под различные устройства
 */
 :root {
+    --page-height: 668px;
     --bg-image: url(../images/cover-image.png);
     --font-family: 'IBM Plex mono';
     --color-black: #000028;
@@ -20,6 +21,8 @@
     --header-title-color: #DB00FF;
     --title-accent-color: var(--accent-color);
     --header-title-paragraph-bg-color: var(--accent-color);
+    --header-title-paragraph-margin: 50px;
+    --header-title-paragraph-height: 117px;
     --header-row-gap: 10px;
     --title-bg-color: var(--title-accent-color);
     --bg-color: var(--color-black);

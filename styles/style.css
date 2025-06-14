@@ -44,12 +44,12 @@
     gap: var(--header-gap);
     justify-items: end;
     align-items: center;
-    height: min(calc(100vh - 2*var(--general-margin)), calc(668px - 2*var(--general-margin)));
+    height: min(calc(100vh - 2*var(--general-margin)), calc(var(--page-height) - 2*var(--general-margin)));
     margin: var(--general-margin) var(--general-margin) 0 var(--general-margin);
 }
 
 .header > :last-child {
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
 }
 
 .decorated-zone::before {
@@ -135,8 +135,9 @@
     font-size: var(--main-font-size);
     font-weight: var(--header-font-weight);
     line-height: 1.4625rem;
-    /*max-width: var(--header-title-paragraph-width);*/
-    /*max-height: var(--header-title-paragraph-height);*/
+    margin-bottom: var(--header-title-paragraph-margin);
+    max-width: var(--header-title-paragraph-width);
+    max-height: var(--header-title-paragraph-height);
 }
 
 .main {
@@ -224,7 +225,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: min(calc(100vh - 2*var(--general-margin)), calc(668px - 2*var(--general-margin)));
+    height: min(calc(100vh - 2*var(--general-margin)), calc(var(--page-height) - 2*var(--general-margin)));
 }
 
 .footer__title {
@@ -248,27 +249,36 @@
 
 @media (width >= 768px) {
     :root {
-        /*--page-padding: 20px;*/
+        --page-height: 1024px;
+        --general-margin: 20px;
         --header-margin-top: 10px;
-        --general-margin: 10px;
-        --header-gap: 173px;
+        --header-gap: 170px;
         --header-title-paragraph-width: 364px;
+        --header-title-paragraph-margin: 80px;
         --header-last-child-margin: 163px;
         --main-padding-top: 80px;
         --main-gap: 80px;
+        --margin-top: 80px;
     }
 
-    .header > :nth-child(2) {
-        margin-top: 170px;
+    .header {
+        /* TODO: remove*/
+        height: calc(var(--page-height) - 2*var(--general-margin)); /* TODO: remove*/
+        margin: var(--general-margin) var(--general-margin) 0 var(--general-margin);
+        gap: 0px;
+    }
+
+    .header__theme-menu {
+        margin-top: 85px;
     }
 
     .header__title {
         justify-self: self-start;
-        margin-left: calc(-1 * var(--page-padding));
+        margin-left: calc(-1 * var(--general-margin));
     }
 
+
     .main {
-        padding-top: var(--main-padding-top);
         display: grid;
         grid-template-rows: repeat(3, max-content);
         gap: 80px;
@@ -288,17 +298,17 @@
         grid-column: 2 / auto;
     }
 
-    .main__section:nth-child(2) {
+    .modified__section {
         display: grid;
         grid-template-columns: 1fr;
     }
 
-    .main__section:nth-child(2) .main__section-title {
+    .modified__section .main__section-title {
         grid-column: 1 / auto;
         max-width: calc((100% - 40px) / 3);
     }
 
-    .main__section:nth-child(2) .main__article {
+    .modified__section .main__article {
         grid-column: 1 / auto;
     }
 
@@ -340,7 +350,8 @@
     }
 
     .footer {
-        margin-top: 80px;
+        height: calc(var(--page-height) - 2*var(--general-margin)); /* TODO: remove */
+        margin: var(--margin-top) var(--general-margin) var(--general-margin) var(--general-margin);
     }
 
     .footer__title {
