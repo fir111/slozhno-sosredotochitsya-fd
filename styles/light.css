@@ -9,10 +9,11 @@
         --paragraph-text-color: #353430 ;
         --paragraph-text-link-color: #FF8DCB;
         --accent-color-hover: rgba(50, 49, 45, 0.4);
+        --bg-color: #FFF1F7;
     }
 
     .page {
-        background-color: #FFF1F7;
+        /*background-color: #FFF1F7;*/
     }
 
     :root:not(.theme-dark) .header__rec {
@@ -30,10 +31,11 @@
     --paragraph-text-color: #353430 !important;
     --paragraph-text-link-color: #FF8DCB !important;
     --accent-color-hover: rgba(50, 49, 45, 0.4) !important;
+    --bg-color: #FFF1F7; !important;
 }
 
 .theme-light .page {
-    background-color: #FFF1F7;
+    /*background-color: #FFF1F7;*/
 }
 
 .theme-light .header__rec {

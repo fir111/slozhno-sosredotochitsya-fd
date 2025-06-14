@@ -6,6 +6,7 @@
     grid-template-rows: repeat(3, max-content);
     justify-content: center;
     padding: var(--page-padding);
+    background: var(--bg-color);
     background-image: var(--bg-image);
     background-attachment: fixed;
     background-position: center;
