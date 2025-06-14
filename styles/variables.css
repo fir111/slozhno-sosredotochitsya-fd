@@ -10,6 +10,9 @@
     --paragraph-text-color: #F1B2CE;
     --accent-color-hover: rgba(255,0,112, 0.4);
     --page-padding: 10px;
+    --header-margin-top: 10px;
+    --general-margin: 10px;
+    --margin-top: 50px;
     --main-font-size: 1.125rem;
     --main-font-weight: regular;
     --header-font-weight: bold;
@@ -25,10 +28,8 @@
     --paragraph-text-link-color: var(--accent-color);
     --main-section-title-color: var(--accent-color);
     --button-color: var(--accent-color);
-    --header-gap: 65px;
-    --header-title-paragraph-width: 355px;
-    --header-title-paragraph-height: 117px;
-    --header-last-child-margin: 55px;
-    --main-padding-top: 50px;
+    --header-gap: 55px;
+    --header-last-child-margin: 70px;
+    --main-padding-top: 30px;
     --main-gap: 50px;
 }
