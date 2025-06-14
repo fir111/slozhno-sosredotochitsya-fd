@@ -258,8 +258,6 @@
     }
 
     .header {
-        /*!* TODO: remove*!*/
-        /*height: calc(var(--page-height) - 2*var(--general-margin)); !* TODO: remove*!*/
         margin: var(--general-margin) var(--general-margin) 0 var(--general-margin);
         gap: 0px;
     }
@@ -345,7 +343,6 @@
     }
 
     .footer {
-        /*height: calc(var(--page-height) - 2*var(--general-margin)); !* TODO: remove *!*/
         margin: var(--margin-top) var(--general-margin) var(--general-margin) var(--general-margin);
     }
 }

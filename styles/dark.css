@@ -13,16 +13,12 @@
 }
 
 :root.theme-dark {
-    --bg-image: url(../images/cover-image-dark.png) !important;
-    --accent-color: #FF0070 !important;
-    --color-black: #000028 !important;
-    --header-title-color: #DB00FF !important;
-    --title-accent-color: var(--accent-color) !important;
-    --paragraph-text-color: #F1B2CE !important;
-    --paragraph-text-link-color: var(--accent-color) !important;
-    --accent-color-hover: rgba(255,0,112, 0.4) !important;
-}
-
-.theme-dark .page {
-    /*background: var(--color-black);*/
+    --bg-image: url(../images/cover-image-dark.png);
+    --accent-color: #FF0070;
+    --color-black: #000028;
+    --header-title-color: #DB00FF;
+    --title-accent-color: var(--accent-color);
+    --paragraph-text-color: #F1B2CE;
+    --paragraph-text-link-color: var(--accent-color);
+    --accent-color-hover: rgba(255,0,112, 0.4);
 }
