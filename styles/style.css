@@ -108,8 +108,7 @@
     border:  1px solid currentColor;
 }
 
-.header__theme-menu-button:hover
-{
+.header__theme-menu-button:hover {
     border:  1px solid var(--accent-color-hover);
 }
 
@@ -264,7 +263,7 @@
     }
 
     .header {
-          gap: 0;
+        gap: 0;
     }
 
     .header__theme-menu {
