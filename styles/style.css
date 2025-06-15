@@ -15,10 +15,10 @@
 
 .header__rec {
     position: absolute;
-    top: 0;
+    top: 10px;
     text-transform: uppercase;
     color: var(--accent-color);
-    margin-right: 28px;
+    margin-right: 38px;
     font-size: var(--main-font-size);
     font-weight: var(--main-font-weight);
     line-height: 1.5625rem;
@@ -44,17 +44,18 @@
     gap: var(--header-gap);
     justify-items: end;
     align-items: center;
-    height: min(calc(100vh - 2*var(--general-margin)), calc(var(--page-height) - 2*var(--general-margin)));
-    margin: var(--general-margin) var(--general-margin) 0 var(--general-margin);
+    height: 100vh;
+    min-height: var(--page-height);
+    padding: var(--general-margin);
 }
 
 .decorated-zone::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: var(--general-margin);
+    right: var(--general-margin);
     width: 25px;
     height: 25px;
-    right: 0;
     border-right: 1px solid var(--accent-color);
     border-top: 1px solid var(--accent-color);
 }
@@ -62,8 +63,8 @@
 .decorated-zone::after {
     content: '';
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: var(--general-margin);
+    left: var(--general-margin);
     width: 25px;
     height: 25px;
     border-left: 1px solid var(--accent-color);
@@ -133,7 +134,7 @@
     line-height: 1.4625rem;
     margin-bottom: var(--header-title-paragraph-margin);
     max-width: var(--header-title-paragraph-width);
-    max-height: var(--header-title-paragraph-height);
+    /*max-height: var(--header-title-paragraph-height);*/
 }
 
 .main {
@@ -217,11 +218,15 @@
 
 .footer {
     position: relative;
-    margin: var(--margin-top) var(--general-margin) var(--general-margin) var(--general-margin);
+    margin-top: var(--margin-top);
+    padding: var(--general-margin);
+    /*margin: var(--margin-top) var(--general-margin) var(--general-margin) var(--general-margin);*/
     display: flex;
     justify-content: center;
     align-items: center;
-    height: min(calc(100vh - 2*var(--general-margin)), calc(var(--page-height) - 2*var(--general-margin)));
+    height: 100vh;
+    min-height: var(--page-height);
+    /*height: min(calc(100vh - 2*var(--general-margin)), calc(var(--page-height) - 2*var(--general-margin)));*/
 }
 
 .footer__title {
