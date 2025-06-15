@@ -98,18 +98,21 @@
     padding: 2px 13px 4px;
 }
 
+.header__theme-menu-button:focus-visible {
+    outline: none;
+    border-bottom:  1px solid var(--accent-color);
+}
+
 .header__theme-menu-button_active {
     pointer-events: none;
     border:  1px solid currentColor;
 }
 
-.header__theme-menu-item:hover {
+.header__theme-menu-button:hover
+{
     border:  1px solid var(--accent-color-hover);
 }
 
-.header__theme-menu-item:focus-visible {
-    border-bottom:  1px solid var(--accent-color);
-}
 
 .title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -243,6 +246,7 @@
 }
 
 .paragraph__text-link:focus-visible {
+    outline: none;
     border: 1px solid var(--paragraph-text-color);
 }
 
